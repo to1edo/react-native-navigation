@@ -23,7 +23,7 @@ export default function MyStack() {
         animationEnabled: false
       }}
     >
-      <Stack.Screen name="House" component={Home} />
+      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Screen1" component={Screen1} />
       <Stack.Screen name="Screen2" component={Screen2} />
       <Stack.Screen name="Screen3" component={Screen3} />
