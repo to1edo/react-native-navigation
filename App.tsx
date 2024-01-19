@@ -4,13 +4,17 @@ import { NavigationContainer } from '@react-navigation/native';
 // import MyStack from './src/stack/MyStack';
 // import DrawerNavigator from './src/stack/DrawerNavigator';
 import MenuLateral from './src/stack/MenuLateral';
+import { AppProvider } from './src/context';
 
 export default function App() {
   return (
+
     <NavigationContainer>
-      <MenuLateral/>
-      {/* <DrawerNavigator/> */}
-      {/* <MyStack/> */}
+      <AppProvider>
+        <MenuLateral/>
+        {/* <DrawerNavigator/> */}
+        {/* <MyStack/> */}
+      </AppProvider>
     </NavigationContainer>
   );
 }
